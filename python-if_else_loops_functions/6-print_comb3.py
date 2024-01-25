@@ -5,4 +5,3 @@ for i in range(0, 10):
             print("{}".format(str(i)+str(j)))
         if i != j and i < j and (str(i) + str(j)) != "89":
             print("{},".format(str(i) + str(j)), end=" ")
-
