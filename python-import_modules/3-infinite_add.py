@@ -7,5 +7,3 @@ if __name__ == "__mein__":
     for i in range(1,len(argv)):
         add+= int(argv[i])
     print("{}".format(add))
-
-        
