@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    from variable_load_5 import a
-    print("{}".format(a))
+def no_c(my_string):
+    c = ""
+    for i in my_string:
+        if i.upper() != 'C':
+            c += i
+    return (c)

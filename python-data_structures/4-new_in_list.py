@@ -1,11 +1,7 @@
-#!/usr/bin/python3
-import hidden_4
-
-def function():
-    name = dir(hidden_4)
-    for i in name:
-        if i[:2] != '__':
-            print("{:s}".format(i))
-
-if __name__ == "__main__":
-    function()
+def new_in_list(my_list, idx, element):
+    list = my_list.copy()
+    if ((idx < 0) or (idx >= len(my_list))):
+        return (list)
+    else:
+        list[idx] = element
+        return (list)
