@@ -6,7 +6,7 @@
 >>> add_integer(1, 2)
 3
 >>> add_integer(100, -2)
- 98
+98
 >>> add_integer(2)
 100
 >>> add_integer(100.3, -2)
@@ -17,6 +17,6 @@ TypeError: b must be an integer or float
 >>> add_integer(None)
 Traceback (most recent call last):
 TypeError: a must be an integer or float
->>> add_integer("str")
+>>> add_integer("str", "r")
 Traceback (most recent call last):
 TypeError: a must be an integer or float
