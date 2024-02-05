@@ -20,3 +20,10 @@ TypeError: a must be an integer or float
 >>> add_integer("str", "r")
 Traceback (most recent call last):
 TypeError: a must be an integer or float
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+>>> a = 10
+>>> b = -5
+>>> add_integer(a, b)
+5
