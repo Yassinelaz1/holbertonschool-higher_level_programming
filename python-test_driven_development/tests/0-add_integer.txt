@@ -17,3 +17,6 @@ TypeError: b must be an integer or float
 >>> add_integer(None)
 Traceback (most recent call last):
 TypeError: a must be an integer or float
+>>> add_integer("str")
+Traceback (most recent call last):
+TypeError: a must be an integer or float
