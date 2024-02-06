@@ -42,4 +42,3 @@ TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' an
 >>> matrix_divided(matrix, 3)
 [[0.33, 20.67, 1.0], [1.33, 1.67, 2.0], [1.48, 0.82, 2.0]]
 
-"""
