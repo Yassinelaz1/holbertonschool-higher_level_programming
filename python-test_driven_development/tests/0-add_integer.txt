@@ -27,8 +27,9 @@ TypeError: add_integer() missing 1 required positional argument: 'a'
 >>> b = -5
 >>> add_integer(a, b)
 5
->>>add_integer("4", "School")
+>>> add_integer("4", "School")
 Traceback (most recent call last):
 TypeError: a must be an integer
+
 
 """
