@@ -52,3 +52,7 @@ TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' an
 Traceback (most recent call last):
 TypeError: matrix must be a matrix of integers/floats
 
+>>> matrix = [[-1, -62, 3]]
+>>> matrix_divided(matrix, 3)
+[[-0.33, -20.67, 1.0]]
+
