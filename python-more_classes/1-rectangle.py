@@ -21,7 +21,7 @@ def width(self):
     return self.__width
 
 
-@width
+@width.setter
 def width(self, value):
     if not isinstance(value, int):
         raise TypeError(width must be an integer)
@@ -35,7 +35,7 @@ def height(self):
     return self.__height
 
 
-@height
+@height.setter
 def height(self, value):
     if not isinstance(value, int):
         raise TypeError("height must be an integer")
