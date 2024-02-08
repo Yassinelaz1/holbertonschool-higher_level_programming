@@ -4,8 +4,11 @@
 
 
 class Rectangle:
-    """Represent rectangle."""
-
+    """Represent rectangle.
+        Args:
+        width (int): The width 
+        height (int): The height
+    """
 
 def __init__(self, width=0, height=0):
     self.width = width
