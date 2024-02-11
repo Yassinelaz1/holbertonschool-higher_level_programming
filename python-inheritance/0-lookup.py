@@ -3,6 +3,7 @@
 module documentation
 """
 
+
 def lookup(obj):
     """
     function documentation
