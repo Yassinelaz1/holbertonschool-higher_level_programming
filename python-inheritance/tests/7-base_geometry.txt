@@ -20,6 +20,8 @@ Importing class from the module:
     TypeError: name must be an integer
 
 
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", 5)
 
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("name", True)
