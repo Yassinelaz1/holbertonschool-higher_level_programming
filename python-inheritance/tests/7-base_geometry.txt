@@ -1,4 +1,9 @@
-"""
+The ``7-base_geometry`` module
+==============================
+
+Using ``BaseGeometry``
+----------------------
+
 Importing class from the module:
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
@@ -17,7 +22,6 @@ Importing class from the module:
     Traceback (most recent call last):
     	      ...
     TypeError: name must be an integer
-
 
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("name", 5)
