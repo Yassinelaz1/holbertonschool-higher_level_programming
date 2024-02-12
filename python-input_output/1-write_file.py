@@ -8,5 +8,4 @@ def write_file(filename="", text=""):
     function documentation
     """
     with open(filename, encoding="utf-8") as f:
-        print(f.write(text))
-
+        return f.write(text)
