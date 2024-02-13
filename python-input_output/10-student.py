@@ -15,6 +15,6 @@ class Student:
 
     def to_json(self, attrs=None):
         if (type(attrs) is list and
-                all(type(elem) == str for elem in attrs)):
+                all(type(elem) is str for elem in attrs)):
             return {i: getattr(self, i) for i in attrs if hasattr(self, i)}
         return self.__dict__
