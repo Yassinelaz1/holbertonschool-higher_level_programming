@@ -17,17 +17,17 @@ class Rectangle(Base):
         super().__init__(id)
 
     @property
-    def width(self, value):
+    def width(self):
         return self.__width
 
     @property
-    def height(self, value):
+    def height(self):
         return self.__height
 
     @property
-    def x(self, value):
+    def x(self):
         return self.__x
 
     @property
-    def y(self, value):
+    def y(self):
         return self.__y
