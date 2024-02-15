@@ -4,6 +4,7 @@ module documentation
 """
 from models.base import Base
 
+
 class Rectangle(Base):
     """
     function documentation
