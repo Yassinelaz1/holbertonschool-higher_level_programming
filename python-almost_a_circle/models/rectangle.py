@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-from models.base import Base
 """
 module documentation
 """
+from models.base import Base
 
 
 class Rectangle(Base):
