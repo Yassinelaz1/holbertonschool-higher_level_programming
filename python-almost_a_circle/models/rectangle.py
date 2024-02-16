@@ -58,6 +58,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
+        """Initialize the Rectangle"""
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         elif value < 0:
