@@ -10,6 +10,7 @@ class Rectangle(Base):
     function documentation
     """
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Initialize the Rectangle"""
         self.width = width
         self.height = height
         self.x = x
@@ -58,7 +59,6 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """Initialize the Rectangle"""
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         elif value < 0:
