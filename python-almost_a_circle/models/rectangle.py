@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-"""
-module documentation
-
-
-"""
+'''Module documentation'''
 from models.base import Base
 
 
