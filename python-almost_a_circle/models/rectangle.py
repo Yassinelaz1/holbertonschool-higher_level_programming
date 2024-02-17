@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""     
+"""
 module documentation
 
 
@@ -78,3 +78,14 @@ class Rectangle(Base):
     def area(self):
         """area"""
         return self.height * self.width
+
+    def display(self):
+        """Display the rectangle"""
+        string = '\n' * self.y + \
+            ('' * self.x + '#' * self.width + '\n') * self.height
+        print(string, end="")
+
+    def __str__(self):
+        """string repsentation  of the rectangle object"""
+        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - \
+{self.__width}/{self.__height}"
