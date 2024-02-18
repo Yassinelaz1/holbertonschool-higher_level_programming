@@ -48,4 +48,12 @@ class Square(Rectangle):
             self.__update(*args)
         elif kwargs:
             self.__update(**kwargs)
-    
+            
+    def to_dictionary(self):
+        """Convert the Square object into a dictionary."""
+        return {
+            "x": self.x,
+            "y": self.y,
+            "id": self.id,
+            "size": self.size,
+        }
