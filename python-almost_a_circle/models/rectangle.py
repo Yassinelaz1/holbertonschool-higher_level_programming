@@ -110,7 +110,7 @@ class Rectangle(Base):
             self.__update(**kwargs)
 
     def to_dictionary(self):
-        """Convert the Rectangle object into a dictionary."""
+        """Convert Rectangle into dictionary."""
         return {
             "x": self.__x,
             "y": self.__y,
