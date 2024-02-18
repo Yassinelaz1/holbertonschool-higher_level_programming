@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''Module documentation'''
+"""
+Module documentation
+"""
 from models.base import Base
 
 
