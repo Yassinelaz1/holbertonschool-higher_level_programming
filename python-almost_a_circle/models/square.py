@@ -16,7 +16,7 @@ class Square(Rectangle):
     def __str__(self):
         """string repsentation  of the square"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
-    
+
     @property
     def size(self):
         """Getter"""
@@ -30,7 +30,7 @@ class Square(Rectangle):
         elif value <= 0:
             raise ValueError("width must be > 0")
         self.width = self.height = value
-        
+
     def __update(self, id=None, size=None, x=None, y=None):
         """ updates """
         if id is not None:
@@ -48,9 +48,9 @@ class Square(Rectangle):
             self.__update(*args)
         elif kwargs:
             self.__update(**kwargs)
-            
+
     def to_dictionary(self):
-        """Convert the Square object into a dictionary."""
+        """Convert Square into dictionary."""
         return {
             "x": self.x,
             "y": self.y,
