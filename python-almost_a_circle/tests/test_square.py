@@ -92,5 +92,44 @@ class TestSquare(unittest.TestCase):
         with self.assertRaises(TypeError):
             Square(5, 1, "invalid")
 
+    def test_size_property(self):
+        """Test size property and setter"""
+        s = Square(5)
+        self.assertEqual(s.size, 5)
+
+        s.size = 10
+        self.assertEqual(s.size, 10)
+
+        with self.assertRaises(ValueError):
+            s.size = -1
+
+        with self.assertRaises(TypeError):
+            s.size = "invalid"
+
+    def test_str(self):
+        """Test string representation"""
+        s = Square(5, 1, 2, 100)
+        self.assertEqual(str(s), "[Square] (100) 1/2 - 5")
+
+    def test_update(self):
+        """ Test update method"""
+        s = Square(5, 1, 2, 100)
+        s.update(200, 10, 3, 4)
+        self.assertEqual(s.id, 200)
+        self.assertEqual(s.size, 10)
+        self.assertEqual(s.x, 3)
+        self.assertEqual(s.y, 4)
+
+    def test_to_dictionary(self):
+        """ Test conversion to dictionary"""
+        s = Square(5, 1, 2, 100)
+        expected_dict = {
+            "id": 100,
+            "size": 5,
+            "x": 1,
+            "y": 2
+        }
+        self.assertEqual(s.to_dictionary(), expected_dict)
+
 if __name__ == '__main__':
     unittest.main()
