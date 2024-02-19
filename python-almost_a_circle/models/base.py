@@ -12,6 +12,7 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """__init__"""
         if id is not None:
             self.id = id
         else:
@@ -20,6 +21,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """to_json_string"""
         if list_dictionaries is None:
             return "[]"
         else:
@@ -27,6 +29,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
+        """save_to_file"""
         if list_objs is None:
             with open(f"{cls.__name__}.json", "w") as f:
                 json.dump([], f)
@@ -37,6 +40,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """from_json_string"""
         if json_string is None:
             return []
         else:
@@ -45,6 +49,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """create"""
         from models.rectangle import Rectangle
         from models.square import Square
         if cls is Rectangle:
@@ -58,6 +63,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        """load"""
         file="{}.json".format(cls.__name__)
         if isfile(file):
             with open(file,"r") as f:
