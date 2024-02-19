@@ -5,6 +5,7 @@ module documentation
 import json
 from os.path import isfile
 
+
 class Base:
     """
     function documentation
@@ -64,11 +65,11 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """load"""
-        file="{}.json".format(cls.__name__)
+        file = "{}.json".format(cls.__name__)
         if isfile(file):
-            with open(file,"r") as f:
+            with open(file, "r") as f:
                 j_str = f.read()
-                l = cls.from_json_string(j_str)
-                return [cls.create(**i) for i in l]
+                list = cls.from_json_string(j_str)
+                return [cls.create(**i) for i in list]
         else:
-            return[]
+            return []
