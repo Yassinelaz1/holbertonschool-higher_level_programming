@@ -66,3 +66,4 @@ class Base:
                 return [cls.create(**i) for i in l]
         else:
             return[]
+
