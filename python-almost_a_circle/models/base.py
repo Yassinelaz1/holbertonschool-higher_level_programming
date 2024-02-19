@@ -3,6 +3,7 @@
 module documentation
 """
 import json
+from os.path import isfile
 
 class Base:
     """
@@ -54,3 +55,14 @@ class Base:
             uptd = None
         uptd.update(**dictionary)
         return uptd
+
+    @classmethod
+    def load_from_file(cls):
+        file="{}.json".format(cls.__name__)
+        if isfile(file):
+            with open(file,"r") as f:
+                j_str = f.read()
+                l = cls.from_json_string(j_str)
+                return [cls.create(**i) for i in l]
+        else:
+            return[]
