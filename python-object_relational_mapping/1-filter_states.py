@@ -12,4 +12,4 @@ if __name__ == "__main__":
     )
     c = db.cursor()
     c.execute("SELECT * FROM states ORDER BY states.id")
-    [print(state) for state in cur.fetchall() if state[1].startswith("N")]
+    [print(state) for state in c.fetchall() if state[1].startswith("N")]
