@@ -4,11 +4,11 @@ cript that lists all states from the database hbtn_0e_0_us
 """
 
 import MySQLdb
-from sys import sys
+from sys import argv
 
 if __name__ == "__main__":
     datab = MySQLdb.connect(
-        user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3]
+        host="localhost", port=3306, user=argv[1], passwd=argv[2], datab=argv[3]
     )
     c = datab.cursor()
     c.execute("SELECT * FROM states ORDER BY states.id")
